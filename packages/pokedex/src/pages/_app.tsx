@@ -1,4 +1,4 @@
-import '@pokemon/styles/globals.css'
+import '@pokedex/styles/globals.css'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
