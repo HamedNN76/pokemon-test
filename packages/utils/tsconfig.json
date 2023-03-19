@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "target": "ES5",
+    "module": "commonjs",
+    "declaration": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["**/*.spec.ts", "**/*.spec.tsx", "node_modules"],
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+}
