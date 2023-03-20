@@ -9,7 +9,7 @@ describe(`it should fetch`, () => {
   });
 
   it('should be defined', () => {
-    expect(PokedexApi).toBeDefined();
+    expect(PokedexApi.getPokemonsList).toBeDefined();
   });
 
   it('should get pokemon page 1', async () => {

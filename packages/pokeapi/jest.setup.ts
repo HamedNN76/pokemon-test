@@ -2,6 +2,7 @@ jest.mock(
   'pokedex-promise-v2',
   () =>
     class {
-      getPokemonsList(interval, callback) {}
+      async getPokemonsList(interval, callback) {}
+      async getPokemonByName(interval, callback) {}
     },
 );
