@@ -2,6 +2,12 @@
   "name": "pokemon-test-root",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "predev": "yarn test && lerna run build --scope '{components,pokeapi,utils}'",
+    "dev": "lerna run dev --scope=pokedex",
+    "build": "lerna run build",
+    "test": "lerna run test --scope '{components,pokeapi,pokedex}'"
+  },
   "workspaces": [
     "packages/*"
   ],
