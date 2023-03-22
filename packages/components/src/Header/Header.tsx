@@ -1,4 +1,5 @@
 import React from 'react';
+import {testIds} from '@/constants/testIds';
 
 export type HeaderProps = {
   message: string;
@@ -9,7 +10,7 @@ export function Header(props: HeaderProps) {
 
   return (
     <div>
-      <h1 data-testid="headerMessage">{message}</h1>
+      <h1 data-testid={testIds.header.message}>{message}</h1>
     </div>
   );
 }
