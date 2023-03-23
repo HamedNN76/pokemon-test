@@ -41,14 +41,22 @@ describe('Pokemons Redux Module', function () {
       it('should fetch the API and call the success action', function () {
         const gen = watchGetPokemons();
         gen.next();
-        assert.deepEqual(gen.next(pokemonMockPageOne).value, put(getPokemonsActions.loadSuccess(pokemonMockPageOne)));
+        assert.deepEqual(
+          gen.next(pokemonMockPageOne).value,
+          put(getPokemonsActions.loadSuccess(pokemonMockPageOne)),
+          'dispatch getPokemonsActions success with data',
+        );
       });
 
       it('should fetch the API and call the failure action', function () {
         const gen = watchGetPokemons();
         gen.next();
         const error = new Error('error');
-        assert.deepEqual(gen.throw(error).value, put(getPokemonsActions.loadFailure(error.message)));
+        assert.deepEqual(
+          gen.throw(error).value,
+          put(getPokemonsActions.loadFailure(error.message)),
+          'dispatch getPokemonsActions failure with error',
+        );
       });
     });
   });
