@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/react": "14.0.0",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
@@ -18,17 +19,22 @@
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
-    "pokeapi": "*",
+    "next-redux-wrapper": "^8.1.0",
     "prettier": "^2.8.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.2.3",
     "typescript": "5.0.2",
     "utils": "*"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.0",
     "jest": "^29.5.0",
-    "jest-environment-jsdom": "^29.5.0"
+    "jest-environment-jsdom": "^29.5.0",
+    "redux-devtools-extension": "^2.13.9"
   }
 }

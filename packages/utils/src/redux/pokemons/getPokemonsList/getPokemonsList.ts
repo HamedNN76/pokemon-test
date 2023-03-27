@@ -1,6 +1,7 @@
 import {ReduxFetchState} from 'redux-fetch-state';
 import {put, takeEvery} from 'redux-saga/effects';
-import {PokedexApi} from 'pokeapi';
+import {PokedexApi} from '../../../pokedex';
+
 export const GetPokemonsFetchState = new ReduxFetchState('getPokemons');
 
 export function* watchGetPokemons() {
@@ -11,6 +12,7 @@ export function* watchGetPokemons() {
     yield put(getPokemonsActions.loadFailure(e.message));
   }
 }
+
 export function* getPokemonsSagas() {
   yield takeEvery(getPokemonsActionTypes.load, watchGetPokemons);
 }

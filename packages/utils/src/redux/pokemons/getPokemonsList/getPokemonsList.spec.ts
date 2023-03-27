@@ -5,9 +5,9 @@ import {
   GetPokemonsFetchState,
   getPokemonsSagas,
   watchGetPokemons,
-} from './getPokemons';
+} from './getPokemonsList';
 import {takeEvery, put} from 'redux-saga/effects';
-import {pokemonMockPageOne} from 'pokeapi';
+import {pokemonMockPageOne} from './getPokemonsList.mock';
 
 describe('Pokemons Redux Module', function () {
   it('Fetch State should be defined', function () {

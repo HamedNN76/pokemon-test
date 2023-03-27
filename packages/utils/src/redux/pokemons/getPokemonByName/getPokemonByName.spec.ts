@@ -7,7 +7,7 @@ import {
   watchGetPokemonByName,
 } from './getPokemonByName';
 import {takeEvery, put} from 'redux-saga/effects';
-import {getPokemonByNameMock} from 'pokeapi';
+import {getPokemonByNameMock} from './getPokemonByName.mock';
 
 describe('Pokemons Redux Module', function () {
   it('Fetch State should be defined', function () {

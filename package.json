@@ -3,18 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "yarn clean:build && lerna run build --scope '{components,pokeapi,utils}' && yarn test",
+    "predev": "yarn clean:build && lerna run build && yarn test",
     "dev": "lerna run dev --scope=pokedex",
     "build": "lerna run build",
-    "test": "lerna run test --scope '{components,pokeapi,pokedex}'",
-    "clean:build": "rimraf packages/components/dist && rimraf packages/pokeapi/dist && rimraf packages/utils/dist && rimraf packages/pokedex/.next",
-    "clean:modules": "rimraf packages/components/node_modules && rimraf packages/pokeapi/node_modules && rimraf packages/utils/node_modules && rimraf packages/pokedex/node_modules && rimraf node_modules",
+    "test": "lerna run test",
+    "clean:build": "rimraf packages/components/dist && rimraf packages/utils/dist && rimraf packages/pokedex/.next",
+    "clean:modules": "rimraf yarn.lock && rimraf packages/components/node_modules && rimraf packages/utils/node_modules && rimraf packages/pokedex/node_modules && rimraf node_modules",
     "clean": "yarn clean:build && yarn clean:modules"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^6.5.1"
+    "lerna": "^6.6.1"
   }
 }

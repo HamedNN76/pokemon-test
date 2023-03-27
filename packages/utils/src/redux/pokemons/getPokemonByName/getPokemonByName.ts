@@ -1,7 +1,7 @@
 import {ReduxFetchState} from 'redux-fetch-state';
 import {put, takeEvery} from 'redux-saga/effects';
-import {PokedexApi} from 'pokeapi';
-import {TGetPokemonByNameForm, TGetPokemonByNameRes, TTGetPokemonByNameAction} from './pokemon.type';
+import {TGetPokemonByNameForm, TGetPokemonByNameRes, TTGetPokemonByNameAction} from '../pokemon.type';
+import {PokedexApi} from '../../../pokedex';
 
 export const GetPokemonByNameFetchState = new ReduxFetchState<TGetPokemonByNameRes, TGetPokemonByNameForm, string>(
   'getPokemonByName',
