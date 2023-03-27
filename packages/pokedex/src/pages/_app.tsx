@@ -8,6 +8,7 @@ const MyApp: FC<AppProps> = ({Component, ...rest}) => {
 
   return (
     <Provider store={store}>
+      {/* @ts-ignore */}
       <Component {...props.pageProps} />
     </Provider>
   );

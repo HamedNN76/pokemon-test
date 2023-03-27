@@ -1,6 +1,6 @@
-import PokeAPI from 'pokedex-promise-v2';
+import {TGetPokemonsListRes} from '../pokemon.type';
 
-export const pokemonMockPageOne: PokeAPI.NamedAPIResourceList = {
+export const pokemonMockPageOne: TGetPokemonsListRes = {
   count: 5,
   next: 'https://pokeapi.co/api/v2?offset=2&limit=2',
   previous: null,
@@ -16,7 +16,7 @@ export const pokemonMockPageOne: PokeAPI.NamedAPIResourceList = {
   ],
 };
 
-export const pokemonMockPageTwo: PokeAPI.NamedAPIResourceList = {
+export const pokemonMockPageTwo: TGetPokemonsListRes = {
   count: 5,
   next: 'https://pokeapi.co/api/v2?offset=4&limit=2',
   previous: 'https://pokeapi.co/api/v2?offset=0&limit=2',
@@ -32,7 +32,7 @@ export const pokemonMockPageTwo: PokeAPI.NamedAPIResourceList = {
   ],
 };
 
-export const pokemonMockPageThree: PokeAPI.NamedAPIResourceList = {
+export const pokemonMockPageThree: TGetPokemonsListRes = {
   count: 5,
   next: null,
   previous: 'https://pokeapi.co/api/v2?offset=2&limit=2',

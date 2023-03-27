@@ -1,5 +1,5 @@
 import React from 'react';
-import {testIds} from '@/constants/testIds';
+import {testIds} from '@/constants';
 
 export type HeaderProps = {
   message: string;

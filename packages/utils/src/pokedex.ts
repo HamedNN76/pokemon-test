@@ -1,9 +1,6 @@
 import Pokedex from 'pokedex-promise-v2';
+import {TPaginationQuery} from './pagination';
 
 export const PokedexApi = new Pokedex();
 
-export type ListEndpointOptions = {
-  offset?: number;
-  limit?: number;
-  cacheLimit?: number;
-};
+export type ListEndpointOptions = TPaginationQuery;

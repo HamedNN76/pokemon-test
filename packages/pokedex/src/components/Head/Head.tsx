@@ -1,6 +1,6 @@
 import React from 'react';
 import NextHead from 'next/head';
-import {testIds} from '@pokedex/constants/testIds';
+import {testIds} from 'components';
 
 export type HeadProps = {
   title?: string;
