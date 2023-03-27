@@ -5,7 +5,7 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 import {Head} from '@pokedex/components/Head';
-import {testIds} from '@pokedex/constants/testIds';
+import {testIds} from 'components';
 
 describe('Head', () => {
   it('should be defined', () => {

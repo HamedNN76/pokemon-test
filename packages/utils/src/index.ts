@@ -5,3 +5,4 @@ export * from './redux/pokemons/getPokemonByName/getPokemonByName';
 export * from './redux/pokemons/getPokemonByName/getPokemonByName.mock';
 
 export * from './pokedex';
+export * from './pagination'

@@ -1,6 +1,6 @@
 import SinglePokemon from '@pokedex/pages/pokemons/[name]';
 import {renderWithProviders} from '@pokedex/redux/renderWithProviders';
-import {testIds} from '@pokedex/constants/testIds';
+import {testIds} from 'components';
 import mockRouter from 'next-router-mock';
 
 describe('Single Pokemon', function () {
@@ -16,7 +16,7 @@ describe('Single Pokemon', function () {
   });
 
   it('should render the name on header', function () {
-    const {queryByTestId} = renderWithProviders(<SinglePokemon />);
+    const {queryByTestId} = renderWithProviders(<SinglePokemon name={mockName} />);
 
     const el = queryByTestId(testIds.header.message);
     expect(el).toBeTruthy();

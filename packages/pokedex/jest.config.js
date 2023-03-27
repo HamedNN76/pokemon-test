@@ -15,6 +15,7 @@ const customJestConfig = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
+    '^utils(.*)?$': 'ts-jest',
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',

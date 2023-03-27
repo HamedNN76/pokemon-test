@@ -5,7 +5,7 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 import {Header} from './Header';
-import {testIds} from "@/constants";
+import {testIds} from '@/constants';
 
 test('renders header', () => {
   const message = 'Hello World!';
