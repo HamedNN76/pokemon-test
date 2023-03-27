@@ -2,4 +2,8 @@ import Pokedex from 'pokedex-promise-v2';
 
 export const PokedexApi = new Pokedex();
 
-export type ListEndpointOptions = Parameters<typeof PokedexApi.getPokemonsList>[0];
+export type ListEndpointOptions = {
+  offset?: number;
+  limit?: number;
+  cacheLimit?: number;
+};

@@ -4,6 +4,7 @@ import {SagaStore, wrapper} from '@pokedex/redux/store';
 import {getPokemonsActions} from 'utils';
 import {useAppSelector} from '@pokedex/hooks/redux';
 import {END} from 'redux-saga';
+import {testIds} from "@pokedex/constants/testIds";
 
 export default function Home() {
   const state = useAppSelector(state => state.getPokemons);
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <HomeContainer>
       <Head title="All Pokemons" description="Fetch all the pokemons" />
-      <p>length: {state.data?.results?.length}</p>
+      <p data-testid={testIds.home.table}>length: {state.data?.results?.length}</p>
     </HomeContainer>
   );
 }

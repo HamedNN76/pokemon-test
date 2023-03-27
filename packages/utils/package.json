@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
-    "redux": "^4.2.1",
     "redux-fetch-state": "^0.2.4",
     "redux-saga": "^1.2.3",
     "pokedex-promise-v2": "^4.1.0"

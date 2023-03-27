@@ -3,4 +3,7 @@ export const testIds = {
     title: 'headTitle',
     description: 'headDescription',
   },
+  home: {
+    table: 'homeTable',
+  },
 };

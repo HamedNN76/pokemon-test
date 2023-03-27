@@ -1,8 +1,11 @@
 import {ReduxFetchState} from 'redux-fetch-state';
 import {put, takeEvery} from 'redux-saga/effects';
-import {PokedexApi} from '../../../pokedex';
+import {ListEndpointOptions, PokedexApi} from '../../../pokedex';
+import Pokedex from 'pokedex-promise-v2';
 
-export const GetPokemonsFetchState = new ReduxFetchState('getPokemons');
+export const GetPokemonsFetchState = new ReduxFetchState<Pokedex.NamedAPIResourceList, ListEndpointOptions, string>(
+  'getPokemons',
+);
 
 export function* watchGetPokemons() {
   try {

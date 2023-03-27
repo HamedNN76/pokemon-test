@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux';
+import {combineReducers} from '@reduxjs/toolkit';
 import {getPokemonByNameReducer, getPokemonsReducer} from 'utils';
 import {HYDRATE} from 'next-redux-wrapper';
 

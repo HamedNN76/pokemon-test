@@ -9,8 +9,8 @@ export function HomeContainer(props: HomeContainerProps) {
 
   return (
     <>
-      {children}
       <Header message="Welcome to Pokemon Test" />
+      {children}
     </>
   );
 }
