@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "yarn clean:build && lerna run build && yarn test",
     "dev": "lerna run dev --scope=pokedex",
-    "build": "lerna run build",
+    "build": "yarn predev && lerna run build",
     "test": "lerna run test",
     "clean:build": "rimraf packages/components/dist && rimraf packages/utils/dist && rimraf packages/pokedex/.next",
     "clean:modules": "rimraf yarn.lock && rimraf packages/components/node_modules && rimraf packages/utils/node_modules && rimraf packages/pokedex/node_modules && rimraf node_modules",
