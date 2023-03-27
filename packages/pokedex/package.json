@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn prebuild && next dev",
+    "prebuild": "lerna run build --scope=utils",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
