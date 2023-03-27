@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "yarn prebuild && next dev",
-    "prebuild": "lerna run build --scope=utils",
+    "prebuild": "lerna run build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
