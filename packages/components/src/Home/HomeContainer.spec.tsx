@@ -5,7 +5,7 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 import {HomeContainer} from './HomeContainer';
-import {testIds} from '@/constants/testIds';
+import {testIds} from '@/constants';
 
 describe('HomeContainer', () => {
   it('should be defined', () => {

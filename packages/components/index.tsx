@@ -1,3 +1,3 @@
-export * from './src/Home'
-export * from './src/Header'
-export * from './src/constants/testIds'
+export * from './src/Home';
+export * from './src/Header';
+export * from './src/constants';
